@@ -1,0 +1,159 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #eef9e3;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      margin-top: 50px;
+
+}
+
+.tasbih-container {
+      display: flex;
+      flex-direction: column;
+      /* Vertikal joylashtirish */
+      align-items: center;
+      /* Markazga joylashtirish */
+      background-color: #245e24;
+      /* Yumaloq konteynerning fon rangi */
+      border-radius: 50%;
+      /* Yumaloq konteyner burchaklari */
+      padding: 40px;
+      /* Yumaloq konteynerga ichki bo'sh joy */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      /* Soyalar */
+      width: 300px;
+      /* Yumaloq konteyner kengligi */
+      height: 300px;
+      /* Yumaloq konteyner balandligi */
+      margin: 0 auto;
+      /* Markazga joylashtirish */
+}
+
+h1 {
+      font-family: 'Georgia', serif;
+      color: #4f874c;
+}
+
+.display {
+      background-color: #103710;
+      border-radius: 10px;
+      color: #99ff99;
+      font-size: 48px;
+      padding: 20px;
+      margin-bottom: 20px;
+}
+
+.tasbih {
+      display: flex;
+      flex-direction: column;
+      /* Vertikal joylashtirish */
+      align-items: center;
+      /* Markazga joylashtirish */
+}
+
+.buttons {
+      display: flex;
+      justify-content: space-between;
+      /* Tugmalarni o'zaro ajratish */
+      width: 100%;
+      /* Tugmalar uchun butun kenglik */
+      max-width: 300px;
+      /* Maksimal kenglik */
+      margin-bottom: 20px;
+      /* Pastga bo'sh joy */
+}
+
+.btn {
+      background-color: #235c23;
+      color: #99ff99;
+      border: none;
+      border-radius: 25px;
+      /* Tugmalar uchun yumshoq burchak */
+      padding: 15px 20px;
+      /* Kichik tugma */
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 45%;
+      /* Tugmalarning kengligini 48% ga tenglashtirish */
+}
+
+.large-btn {
+      font-size: 28px;
+      /* Katta tugma uchun shrifti */
+      padding: 20px 40px;
+      /* Katta tugma uchun kengroq padding */
+      width: 100%;
+      /* Katta tugma uchun butun kenglik */
+}
+
+.round-btn {
+      background-color: #4CAF50;
+      /* Tugma fon rangini o'zgartirdik */
+      color: #ffffff;
+      /* Tugma matn rangi */
+      border: none;
+      /* Chegarasiz */
+      border-radius: 50%;
+      /* Yumaloq bo'lishi */
+      padding: 20px;
+      /* Tugma o'lchamini oshirish */
+      font-size: 32px;
+      /* Katta tugma matni o'lchami */
+      transition: background-color 0.3s ease, transform 0.2s;
+      /* Tugma rangini va siljishini o'zgartirish */
+      width: 120px;
+      /* Tugma kengligi */
+      height: 120px;
+      /* Tugma balandligi */
+      display: flex;
+      /* Tugma ichidagi matnni markazga joylashtirish */
+      align-items: center;
+      /* Vertikal markazlash */
+      justify-content: center;
+      /* Gorizontal markazlash */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      /* Tugmaga soyalar qo'shish */
+}
+
+.round-btn:hover {
+      background-color: #45a049;
+      /* Tugma ustida hover paytida rangni o'zgartirish */
+      transform: translateY(-3px);
+      /* Tugma ustida hover paytida yuqoriga siljish */
+}
+
+.round-btn:active {
+      transform: translateY(2px);
+      /* Tugma bosilganda pastga siljish */
+}
+
+.btn:hover {
+      background-color: #1b461b;
+}
+
+#increment {
+      background-color: #103710;
+      color: #ffffff;
+}
+
+.animate {
+      animation: bounce 0.3s ease;
+      /* Animasiyaga yuqoriga siljish berish */
+}
+
+@keyframes bounce {
+      0%, 100% {
+            transform: translateY(0);
+            /* Dastlabki pozitsiya */
+      }
+
+      50% {
+            transform: translateY(-10px);
+            /* Yuqoriga siljish */
+      }
+}
